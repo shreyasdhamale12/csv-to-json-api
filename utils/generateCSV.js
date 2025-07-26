@@ -17,12 +17,12 @@ const genders = ["male", "female", "other"];
 const rows = [headers.join(",")];
 
 for (let i = 0; i < COUNT; i++) {
-  const first = faker.person.firstName();      // ✅ new method
-  const last = faker.person.lastName();        // ✅ new method
-  const age = faker.number.int({ min: 10, max: 89 }); // random age
-  const line1 = faker.location.streetAddress(); // ✅ new method
-  const city = faker.location.city();           // ✅ new method
-  const gender = faker.helpers.arrayElement(genders); // safer & cleaner
+  const first = faker.person.firstName();      
+  const last = faker.person.lastName();        
+  const age = faker.number.int({ min: 10, max: 89 });
+  const line1 = faker.location.streetAddress(); 
+  const city = faker.location.city();           
+  const gender = faker.helpers.arrayElement(genders); 
 
   rows.push(`${first},${last},${age},${line1},${city},${gender}`);
 }

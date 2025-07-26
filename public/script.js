@@ -40,7 +40,7 @@ document.getElementById('uploadForm').addEventListener('submit', async function 
   
       reportDiv.innerHTML = html;
     } catch (err) {
-      reportDiv.innerHTML = `❌ Failed to fetch report`;
+      reportDiv.innerHTML = `Failed to fetch report`;
     }
   });
   
